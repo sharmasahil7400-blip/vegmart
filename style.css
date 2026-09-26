@@ -1,0 +1,296 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+}
+
+html {
+    width: 100%;
+}
+header{
+    height: 70px;
+    border: solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   color:white ;
+   background-color: #01823F;
+}
+header .allgo{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    gap: 10px;
+}
+header .allgo i{
+    font-size: 40px;
+    padding-top: 10px;
+}
+.log{
+    display: flex;
+    font-size: 25px;
+}
+header input{
+    padding: 10px;
+    width: 1000px;
+}
+#ser{
+    display: flex;
+}
+.cart{
+    margin-right: 30px;
+    font-size: 25px;
+}
+
+/* -------------nav bar */
+ 
+ #nav{
+    display: flex;
+    gap: 45px;
+    margin-left: 50px;
+    margin-right: 5px;
+    justify-content: space-evenly; 
+    /* position: sticky;
+    top:0; */
+    
+ }  
+
+nav{
+    display: flex;
+    width: 1561px;
+height: 60px;
+/* border: solid;  */
+align-items: center;
+justify-content: space-between;
+position: sticky;
+top: 0;
+box-shadow: 0px 0px 3px 2px lightgray;
+ 
+}
+#category select{
+    font-size: 20px;
+    padding: 6px 12px;
+background-color: #01823F;
+}
+#category{
+    display: flex;
+    margin-left: 20px;
+    font-size: 10px;
+   align-items: center;
+   font-size: 20px;
+   background-color: #01823F;
+}
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+    font-size: 20px;
+}
+nav a:hover{
+   color: #01823F;
+   background-color: #91ec9a;
+   font-size: 22px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* ----------------main body-------------- */
+section{
+    height: 800px;
+    /* border: solid; */
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    width: 1540px;
+}
+section #h3{
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+section .checkbox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+section #h5{
+    margin-bottom: 13px;
+}
+section .sectL{
+    height: 775px;
+    padding-left: 10px;
+    width: 15%;
+    /* border-right: solid; */
+    background-color: rgb(239, 229, 229);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.price-slider {
+    position: relative;
+    width: 200px;
+    height: 30px;
+}
+
+.price-slider input {
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+}
+
+.price-slider input::-webkit-slider-thumb {
+    pointer-events: auto;
+}
+
+.price-value {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+section .Brandcheckbox{
+    display: flex;
+    flex-direction: column;
+    gap:10px
+}
+section .btn{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+section .btn button{
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: grey;
+}
+section .btn >button:first-child{
+    background-color: #01823F;;
+}
+/*  section middle */
+section .secM{
+    height: 785px;
+    width: 84%;
+    position: absolute;
+    /* border: solid; */
+    top: 0;
+    left: 16%;
+   
+}
+.secM .bigphoto img{
+    width: 100%;
+    height:250px;
+    border-radius: 15px;
+}
+.secM .popularproducts{
+display: flex;
+height: 30px; 
+
+align-items: center;
+justify-content: space-between;
+}
+.popularproducts{
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+
+.secM .grid{
+    margin-left: 0;
+    display: grid;
+    /* grid-template-rows: repeat(2,220px); */
+    grid-template-columns: repeat(6,220px);
+    column-gap:45px;
+    row-gap: 40px;
+  
+   
+} 
+.con{
+height: 300px;
+width: 230px;
+border: 2px solid black;
+box-shadow: 0 0 20px green;
+
+}
+
+
+.con img{
+    height: 180px;
+    width: 180px;
+    align-items: center;
+}
+.con button{
+    background-color:#01823F ;
+    width: 90%;
+    margin-left: 10px;
+    padding: 3px;
+    
+}
+.con .des{
+    margin-left: 20px;
+}
+/* yaha jab cart button pe click hoga toh kase css wo hai*/
+/* .cartBox {
+    width: 300px;
+    height: max-content;
+    border: 2px solid black;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: white;
+}
+.cartBox {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.cartItem {
+    padding: 10px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+/} *//* agale page dikha hai isliye cpmment kiya  */
+body{
+    position: relative;
+}
+.rightupper{
+    position: absolute ;
+    top: 70px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: 340px;
+    width: 320px;
+    border: solid;
+    margin: 5px;
+    background-color: #e5ffdb;
+    box-shadow: 0 0 10px green;
+}
+.rightupper .off{
+    height: 100px;
+    width: auto;
+    font-size: 25px; 
+    padding: 10px; 
+    font-family:Arial, Helv;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    color: rgb(208, 27, 51);
+    background-color: #ecc091;
+
+   
+}
+.c_offer{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    font-size: 20px;
+    background-color: rgb(221, 246, 184);
+}

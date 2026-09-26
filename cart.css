@@ -1,0 +1,28 @@
+.cartImage {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.cartItem {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(101, 25, 25, 0.1);
+}
+.cartItem h3 {
+    margin-bottom: 10px;
+}
+
+.cartItem p {
+    margin-bottom: 10px;
+}
+
+.cartItem h2 {
+    margin: 0;
+    color: brown;
+}

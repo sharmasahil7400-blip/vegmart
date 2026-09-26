@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<body>
+    <header>
+        <div class="allgo" >
+            <div id="logo">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div>
+                <h1>My Store</h1>
+                <p>Fresh Grocceries,happier you</p>
+            </div>
+        </div>
+        <div id="ser">
+            <input  id="maininput" type="text" placeholder="Search for grocceries,snaks,essentials....">
+            <button id="search">search</button>
+        </div>
+        <div class="log">
+            <div><i class="fa-solid fa-user"></i></div>
+            <button id="homesign">Sign in</button>
+            
+        </div>
+        <a href="cart.html" class="cart"> <i class="fa-solid fa-cart-shopping"></i></a>
+        
+    </header>
+    <!-- navbar --------------------------------------------------------->
+     <nav>
+        <div id="category">
+            <i class="fa-solid fa-bars"></i>
+             <select name="" id="category_select">
+                <option value="" id="op">Shop By category</option>
+                <option value="fruits-veg">Fruits & Vegetables</option>
+                <option value="dairy">Dairy & Eggs</option>
+                <option value="snacks">Snacks</option>
+                <option value="essentials">Daily Essentials</option>
+            </select>                
+        </div>
+        <div id="nav">
+        <a href="index.html">Home</a>
+        <a href="" id="fruit_veg">Fruits&vegetables</a>
+        <a href="" id="dairy">Dairy&eggs</a>
+        <a href="" id="snacks">Snacks</a>
+        <a href="" id="essentials">Dialy essentials</a>
+        <a href="" id="household">Household</a>
+        <a href="" id="berverages">Beverges</a>
+        <a href="" id="personalcare">Personal Care</a>
+        <a href="" id="offer">Offers</a>
+        </div>
+       
+     </nav>
+     <!-- ---------------------------------main---------- -->
+      <section>
+            <div class="sectL">
+                 <!-- <h3 id="h3">Filters</h3>
+                <h5 id="h5">category</h5>
+               
+                <div class="checkbox">
+                    <div><input type="checkbox" name="" id="">Fruits&vegetables</div>
+                    <div>   <input type="checkbox" name="" id="">Dairy&eggs</div>
+                    <div> <input type="checkbox" name="" id="">Snacks</div>
+                    <div><input type="checkbox" name="" id="">Dialy essentials</div>
+                    <div><input type="checkbox" name="" id="">Household</div>
+                    <div>  <input type="checkbox" name="" id="">Beverges</div>
+                    <div>  <input type="checkbox" name="" id="">Person Care</div>
+                    <div>   <input type="checkbox" name="" id="">Offers</div>
+                </div> -->
+                <hr>
+                <div id="p">
+                    <h3>Price Range</h3>
+                    <div class="price-slider">
+                        <input type="range" min="0" max="1000" value="0">
+                        <input type="range" min="0" max="1000" value="1000">
+                    </div>
+                    <div class="price-value">
+                        <span>₹0</span>
+                        <span>₹1000+</span>
+                    </div>               
+                </div>
+                <hr>
+                <div>
+                    <h3>Brand</h3>
+                    <div class="Brandcheckbox">
+                        <div><input type="checkbox" value="amul">Amul</div>
+                        <div><input type="checkbox" value="nestle">Nestle</div>
+                        <div><input type="checkbox" value="tata">Tata</div>
+                        <div><input type="checkbox" value="britania">Britania</div>
+                        <div><input type="checkbox" value="pepsi">Pepsi</div>
+                        <div><input type="checkbox" value="babur">Dabur</div>
+                        <div><input type="checkbox" value="haldiram">Haldiram's</div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button>Apply Filters</button>
+                    <button>Clear Filters</button>
+                </div>
+
+            </div>
+            <div class="secM">
+                <div class="bigphoto">
+                    <img src="https://items.templately.com/media/10070/Screenshots-2-(1).jpg" alt="">
+                </div>
+                <div class="popularproducts">
+                    <div>
+                        <h2>Popular Products</h2>
+                    </div>
+                    <div>
+                        <label for="">Sort by:</label>
+                        <select name="" id="">
+                            <option value="">Relevence</option>
+                            <option value="">demo1</option>
+                            <option value="">demo2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="con" data-category="fruits" data-brand="">
+                        <div>
+                            <img src="banana.jpg" alt="" >
+                        </div>
+                        <div class="des">
+                            <h3>Fresh Banana</h3>
+                            <p>1kg</p>
+                            <h2>₹60</h2>
+                        </div>
+                        <div>
+                            <button id="banana">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="con" data-category="dairy" data-brand="amul">
+                        <div>
+                            <img src="amul.milk.webp" alt="">
+                        </div>
+                        <div class="des">
+                            <h3>Fresh Milk</h3>
+                            <p>1lit</p>
+                            <h2>₹96</h2>
+                        </div>
+                        <div>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="con" data-category="essentials" data-brand="ashirvad">
+                        <div>
+                            <img src="ata.webp" alt="">
+                        </div>
+                        <div class="des">
+                            <h3>Ata</h3>
+                            <p>5kg</p>
+                            <h2>₹380</h2>
+                        </div>
+                        <div>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="con" data-category="essentials" data-brand="britania">
+                        <div>
+                            <img src="bread.webp" alt="">
+                        </div>
+                        <div class="des">
+                            <h3>Fresh Bread</h3>
+                            <p>Small Pack</p>
+                            <h2>₹25</h2>
+                        </div>
+                        <div>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div><div class="con" data-category="essentials" data-brand="tata">
+                        <div>
+                            <img src="images.jpg" alt="">
+                        </div>
+                        <div class="des">
+                            <h3>Salt</h3>
+                            <p>1kg</p>
+                            <h2>₹30</h2>
+                        </div>
+                        <div>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div><div class="con" data-category="snacks" data-brand="nestle">
+                        <div>
+                            <img src="lays.jpg" alt="">
+                        </div>
+                        <div class="des">
+                            <h3>Lays</h3>
+                            <p>100g</p>
+                            <h2>₹60</h2>
+                        </div>
+                        <div>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div><div class="con" data-category="snacks" data-brand="britania">
+                        <div>
+                            <img src="maggi.jpg" alt="">
+                        </div>
+                        <div class="des">
+                            <h3>Maggie</h3>
+                            <p>50g</p>
+                            <h2>₹15</h2>
+                        </div>
+                        <div>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="con" data-category="snacks" data-brand="haldiram">
+                        <div>
+                            <img src="namkin.webp" alt="">
+                        </div>
+                        <div class="des">
+                            <h3>Namkin</h3>
+                            <p>1kg</p>
+                            <h2>₹300</h2>
+                        </div>
+                        <div>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>                  
+                    <div class="con" data-category="veg" data-brand="dabur">
+                        <div>
+                            <img src="onion.jpg" alt="">
+                        </div>
+                        <div class="des">
+                            <h3>Onion</h3>
+                            <p>1kg</p>
+                            <h2>₹50</h2>
+                        </div>
+                        <div>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="con" data-category="veg" data-brand="pepsi">
+                        <div>
+                            <img src="tomoto.jpg" alt="">
+                        </div>
+                        <div class="des">
+                            <h3>Tomoto</h3>
+                            <p>1kg</p>
+                            <h2>₹80</h2>
+                        </div>
+                        <div>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- //-------------------------------new 15 -->
+                    <div class="con" data-category="breverages" data-brand="">
+                        <div>
+                            <img src="coconutdrink.avif" alt="" >
+                        </div>
+                        <div class="des">
+                            <h3>Fresh coconutdrink</h3>
+                            <p>1 qty</p>
+                            <h2>₹45</h2>
+                        </div>
+                        <div>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="con" data-category="breverages" data-brand="">
+                        <div>
+                            <img src="coke.jpg" alt="" >
+                        </div>
+                        <div class="des">
+                            <h3>Coke</h3>
+                            <p>1 qty</p>
+                            <h2>₹40</h2>
+                        </div>
+                        <div>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="con" data-category="breverages" data-brand="">
+                        <div>
+                            <img src="coldcoffe.webp" alt="" >
+                        </div>
+                        <div class="des">
+                            <h3>cold coffee</h3>
+                            <p>1 qty</p>
+                            <h2>₹50</h2>
+                        </div>
+                        <div>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="con" data-category="breverages" data-brand="">
+                        <div>
+                            <img src="sprite.webp" alt="" >
+                        </div>
+                        <div class="des">
+                            <h3>Sprite</h3>
+                            <p>1lit</p>
+                            <h2>₹60</h2>
+                        </div>
+                        <div>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="con" data-category="breverages" data-brand="">
+                        <div>
+                            <img src="redbull.jpg" alt="" >
+                        </div>
+                        <div class="des">
+                            <h3>Redbull</h3>
+                            <p>1 qty</p>
+                            <h2>₹135</h2>
+                        </div>
+                        <div>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="con" data-category="breverages" data-brand="">
+                        <div>
+                            <img src="fruti.jpg" alt="" >
+                        </div>
+                        <div class="des">
+                            <h3>Fruiti</h3>
+                            <p>1 qty</p>
+                            <h2>₹10</h2>
+                        </div>
+                        <div>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- /++++++++++++++++++++++++++++++++++++++++ -->
+                    <div class="con" data-category="Household" data-brand="">
+                        <div>
+                            <img src="dustbin.jpg" alt="" >
+                        </div>
+                        <div class="des">
+                            <h3>Dustbin</h3>
+                            <p>1 qty</p>
+                            <h2>₹85</h2>
+                        </div>
+                        <div>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                     <div class="con" data-category="Household" data-brand="">
+                        <div>
+                            <img src="viem.jpg" alt="" >
+                        </div>
+                        <div class="des">
+                            <h3>Kitchen Gel</h3>
+                            <p>1 qty</p>
+                            <h2>₹100</h2>
+                        </div>
+                        <div>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                     <div class="con" data-category="Household" data-brand="">
+                        <div>
+                            <img src="viper.jpg" alt="" >
+                        </div>
+                        <div class="des">
+                            <h3>Mop & Bucket</h3>
+                            <p>1 qty</p>
+                            <h2>₹285</h2>
+                        </div>
+                        <div>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="con" data-category="personalcare" data-brand="">
+                        <div>
+                            <img src="colgate.webp" alt="" >
+                        </div>
+                        <div class="des">
+                            <h3>Clogate</h3>
+                            <p>100g</p>
+                            <h2>₹90</h2>
+                        </div>
+                        <div>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="con" data-category="personalcare" data-brand="">
+                        <div>
+                            <img src="perfume.webp" alt="" >
+                        </div>
+                        <div class="des">
+                            <h3>Perfume</h3>
+                            <p>100ml</p>
+                            <h2>₹250</h2>
+                        </div>
+                        <div>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="con" data-category="personalcare" data-brand="">
+                        <div>
+                            <img src="powder.jpg" alt="" >
+                        </div>
+                        <div class="des">
+                            <h3>Face powder</h3>
+                            <p>100g</p>
+                            <h2>₹190</h2>
+                        </div>
+                        <div>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="con" data-category="personalcare" data-brand="">
+                        <div>
+                            <img src="oil.jpg" alt="" >
+                        </div>
+                        <div class="des">
+                            <h3>Hair Oil</h3>
+                            <p>100g</p>
+                            <h2>₹130</h2>
+                        </div>
+                        <div>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="con" data-category="personalcare" data-brand="">
+                        <div>
+                            <img src="lifebuoy.jpg" alt="" >
+                        </div>
+                        <div class="des">
+                            <h3>Lifebuoy Soap</h3>
+                            <p>100g</p>
+                            <h2>₹55</h2>
+                        </div>
+                        <div>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="con" data-category="personalcare" data-brand="">
+                        <div>
+                            <img src="facewash.jpeg" alt="" >
+                        </div>
+                        <div class="des">
+                            <h3>Facewash V-C</h3>
+                            <p>100g</p>
+                            <h2>₹190</h2>
+                        </div>
+                        <div>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div></div>
+        
+        <div></div>
+        <div></div>
+      </section>
+      <div class="rightupper">
+        <div class="off">
+            <h2>Todays offer</h2>
+        </div>
+        <hr>
+       
+        <div class="c_offer">
+            <p>🥤 Beverages — 20% <span style="color: brown;">OFF</span></p>
+            <p>🍪 Snacks — Buy <span style="color: brown;">1 Get 1</span></p>
+            <p>🧴 Personal Care — Up to 30% <span style="color: rgb(207, 8, 8);">OFF</span></p>
+            <p>🧹 Household — 25% OFF</p>
+        </div>
+      </div>
+      <script src="script.js"></script>
+<body>
